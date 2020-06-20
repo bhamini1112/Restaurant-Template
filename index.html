@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Restaurant template</title>
+
+        <style type="text/css">
+
+            body {
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            #header-bar {
+                width: 100%;
+                height: 200px;
+                background-color: lavender;
+                margin: 0px;
+            }
+
+            #container {
+                width: 1000px !important;
+                margin: 0 auto;
+            }
+
+            #main-head {
+                font-size: 300%;
+                text-align: center;
+                padding: 30px;
+                font-style: italic;
+                color:lightslategrey;
+            }
+
+            #top-content {
+                width: 700px;
+                margin: 0 auto;
+            }
+
+            hr {
+                background-color: lightslategrey;
+            }
+
+            .toggle-button {
+                float: left;
+                text-align: center;
+                padding: 15px;
+                color: lightslategrey;
+            }
+
+            .toggle-button:link {
+                color: lightslategrey;
+                text-decoration: none;
+            }
+
+            .toggle-button:hover {
+                color: lightslategrey;
+                text-decoration: none;
+            }
+
+            .toggle-button:visited {
+                color: lightslategrey;
+            }
+
+            #home {
+                width: 100px;
+            }
+
+            #our-menus {
+                width: 150px;
+            }
+
+            #blog-link {
+                width: 150px;
+            }
+
+            #contact {
+                width: 150px;
+            }
+
+            #intro-container {
+                background-image: url("https://www.editionhotels.com/wp-content/uploads/2016/07/EDT_Sanya2_126_V3-e1536343603372.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                background-color: white;
+                width: 100%;
+                height: 250px;
+                padding: 150px 0;
+            }
+
+            #intro-content-container {
+                width: 650px;
+                margin: 0 auto;
+            }
+
+            .content {
+                color: white;
+                text-align: center;
+                margin: 20px;
+            }
+
+            #intro-line1 {
+                font-size: 130%;
+                margin-top: 0 !important;
+            }
+
+            #intro-line2 {
+                font-size: 280%;
+                font-weight: bold;
+            }
+
+            .order-book-button {
+                background-color:lightcoral;
+                margin-left: 250px;
+                padding: 18px 5px;
+                border: none;
+                border-radius: 3px;
+            }
+
+            .text-in-button:link {
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .text-in-button:hover {
+                color: white;
+            }
+
+            .text-in-button:visited {
+                color: white;
+            }  
+
+            #call-info-container {
+                width: 1060px;
+                margin: 80px auto;
+                height: 400px;
+            }
+
+            .food-image {
+                width: 350px;
+                height: 250px;
+                float: left;
+                margin: 43px 0px;
+            }
+
+            #call-info {
+                background-color: lightcoral;
+                width: 350px;
+                height: 300px;
+                float: left;
+                margin: 0px;
+                padding: 20px 0px;
+            }
+
+            #contact-line1 {
+                font-size: 130%;
+                font-weight: bold;
+            }
+
+            #number-info {
+                width: 280px;
+                margin: 20px auto !important;
+                background-color: rgb(240, 169, 169);
+                padding: 38px 0px;
+                border-radius: 3px;
+            }
+
+            #call-statement {
+                color: white;
+                font-size: 80%;
+            }
+
+            #number {
+                font-size: 130%;
+                font-weight: bold;
+            }
+
+            #or-div {
+                border: 1px solid grey;
+                border-radius: 50%;
+                padding: 5px;
+            }
+
+            #order-now-button {
+                background-color: white;
+                border: none;
+                border-radius: 3px;
+                padding: 15px;
+                margin: 5px;
+                width: 150px;
+            }
+
+            #order-link {
+                font-size: 120%;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            #order-link:link{
+                color: lightcoral;
+                text-decoration: none;
+            }
+
+            #order-link:hover{
+                color: lightcoral;
+                text-decoration: none;
+            }
+
+            #order-link:visited {
+                color: lightcoral;
+            }
+
+            #food-variety {
+                width: 1200px;
+                margin: 0px auto !important;
+                height: 350px;
+            }
+
+            .food {
+                width: 283px;
+                height: 283px;
+                float: left;
+            }
+
+            .circle-food-image {
+                width: 180px;
+                height: 180px;
+                border: 10px solid lavender;
+                border-radius: 50%;
+                margin: 10px 70px;
+            }
+
+            .food-text {
+                font-size: 140%;
+                text-align: center;
+                margin: 130px;
+            }
+
+            .food-text:link {
+                color: black;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            .food-text:hover {
+                color: black;
+            }
+
+            .food-text:visited {
+                color: black;
+            }
+
+            #book-table-container {
+                background-image: url("bg-res.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                background-color: black;
+                width: 100%;
+                height: 720px;
+            }
+
+            #book-table-form {
+                width: 750px;
+                margin: 0 auto;
+                height: 500px;
+            }
+
+            #text-book {
+                font-size: 150%;
+                font-weight: bold;
+                color: white;
+                text-align: center;
+                padding: 100px;
+            }
+
+            #book-image {
+                width: 375px;
+                height: 280px;
+                padding: 0;
+                margin: 0px;
+                float: left;
+                border-bottom: 10px solid lightcoral;
+            }
+
+            #reservation-form {
+                width: 375px;
+                height: 280px;
+                padding: 0px;
+                background-color: white;
+                margin: 0px;
+                float: left;
+                border-bottom: 10px solid lightcoral;
+            }
+
+            #res-text {
+                font-size: 150%;
+                text-align: center;
+                padding-top: 30px;
+                font-weight:550;
+            }
+
+            .elements {
+                color: rgb(175, 175, 175);
+                padding: 8px 2px;
+                width: 150px !important;
+                border-bottom: 1px solid rgb(238, 236, 236);
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                margin:10px;
+                float: left;
+            }
+
+            ::placeholder {
+                color: rgb(175, 175, 175);
+            }
+
+            #book-table-button {
+                background-color: lightcoral;
+                width: 150px;
+                padding: 3px;
+                margin:10px;
+                float: left;
+                border: none;
+                border-radius: 3px;
+                height: 40px;
+            }
+
+            #book-table-link:link {
+                color:white;
+                text-decoration: none;
+            }
+
+            #book-table-link:hover {
+                color: white;
+            }
+
+            #book-table-link:visited {
+                color: white;
+            }
+
+            #app-download-container {
+                background-color: lightcoral;
+                margin: 100px 0px;
+                width: 100%;
+                height: 200px;
+            }
+
+            #app-download {
+                width: 500px;
+                margin: 0 auto;
+                padding: 60px;
+            }
+
+            #download-text {
+                font-size: 160%;
+                color: white;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            #download-button {
+                background-color: white;
+                width: 150px;
+                height: 40px;
+                margin: 30px 180px;
+                border: none;
+                border-radius: 3px;
+            }
+
+            #button-text:link {
+                color: lightcoral;
+                text-align: center;
+                text-decoration: none;
+                font-size: 90%;
+                font-weight: 600;
+            }
+
+            #button-text:hover {
+                color: lightcoral;
+            }
+
+            #button-text:visited {
+                color: lightcoral;
+            }
+
+            #recommendation-container {
+                width: 1200px;
+                margin: 150px auto !important;
+                height: 350px;
+            }
+
+            #rec-text-head {
+                font-size: 150%;
+                font-weight: bold;
+                text-align: center;
+                padding: 18px;
+            }
+
+            .recommendations {
+                background-color: lavender;
+                width: 340px;
+                margin: 10px;
+                padding: 20px;
+                float: left;
+            }
+
+            .head-rec {
+                font-size: 170%;
+            }
+
+            #image-breakfast {
+                background-image: url("breakfast-blog.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                width: 340px;
+                height: 200px;
+                margin: 20px 0px 0px 0px;
+            }
+
+            #image-lunch {
+                background-image: url("lunch-blog.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                width: 340px;
+                height: 200px;
+                margin: 20px 0px 0px 0px;
+            }
+
+            #image-dinner {
+                background-image: url("dinner-blog.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                width: 340px;
+                height: 200px;
+                margin: 20px 0px 0px 0px;
+            }
+
+            .price-tag {
+                background-color: white;
+                opacity: 0.8;
+                color: lightcoral;
+                font-size: 120%;
+                float: right;
+                padding: 10px 20px;
+                margin-top: 158px;
+            }
+
+            .menu-container {
+                width: 340px;
+                height: 120px;
+                background-color: white;
+                margin-top: 0;
+            }
+
+            .menu {
+                font-size: 130%;
+                padding: 10px;
+            }
+
+            .brief {
+                padding: 0px 10px;
+                color: grey;
+            }
+
+            #div-for-blogs {
+                width: 100%;
+                height: 780px;
+                background-color: lavender;
+                margin-top: 250px;
+            }
+
+            #blog-container {
+                width: 1200px;
+                margin: 0 auto;
+                height: 750px;
+            }
+
+            #blog-head {
+                text-align: center;
+                font-size: 180%;
+                padding: 55px;
+                font-weight: bold;
+            }
+
+            .blog-holder {
+                width: 550px;
+                margin: 15px;
+                height: 250px;
+                float: left;
+            }
+
+            #hold-blog-image1 {
+                background-image: url("blog1.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                width: 275px;
+                height: 250px;
+                float: left;
+            }
+
+            #hold-blog-image2 {
+                background-image: url("blog3.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                width: 275px;
+                height: 250px;
+                float: left;
+            }
+
+            #hold-blog-image3 {
+                background-image: url("blog2.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                width: 275px;
+                height: 250px;
+                float: left;
+            }
+
+            #hold-blog-image4 {
+                background-image: url("blog4.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                width: 275px;
+                height: 250px;
+                float: left;
+            }
+
+            .hold-date {
+                font-size: 130%;
+                color: lightcoral;
+                background-color: white;
+                width: 230px;
+                height: 130px;
+                opacity: 0.8;
+            }
+
+            .blog-content {
+                width: 275px;
+                height: 250px;
+                background-color: white;
+                float: left;
+            }
+
+            .blog-header {
+                font-size: 130%;
+                margin: 15px;
+            }
+
+            .specifications {
+                margin: 15px;
+                color: grey;
+            }
+
+            .content-written {
+                margin: 15px;
+                color: grey;
+            }
+
+            .link-to-read:link {
+                margin: 15px;
+                color: lightcoral;
+                text-decoration: none;
+            }
+
+            .link-to-read:hover {
+                color: lightcoral;
+            }
+
+            .link-to-read:visited {
+                color: lightcoral;
+            }
+
+            #new-letter {
+                background-image: url("blur-bg.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                width: 100%;
+                height: 250px;
+                border-bottom: 20px solid lightcoral;
+            }
+
+            #news-letter-holder {
+                width: 600px;
+                height: 250px;
+                margin: 0 auto;
+                padding: 30px;
+            }
+
+            #newsletter-head {
+                color: white;
+                font-size: 150%;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            #email-container {
+                width: 330px;
+                height: 40px;
+                opacity: 0.9;
+                background-color: white;
+                border: none;
+                border-radius: 5px;
+                margin: 40px;
+                padding: 0px 6px;
+            }
+
+            #send-button {
+                width: 150px;
+                height: 40px;
+                border: 1.5px solid white;
+                border-radius: 5px;
+                background-color:transparent;
+                color: white;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="header-bar">
+            <div id="container">
+                <div id="main-head">Treat's On Me</div>
+                <hr>
+                <div id="top-content">
+                    <a href src="" class="toggle-button" id="home">HOME</a>
+                    <a href src="" class="toggle-button" id="our-menus">OUR MENUS</a>
+                    <a href src="" class="toggle-button" id="blog-link">BLOG POSTS</a>
+                    <a href src="" class="toggle-button" id="contact">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="intro-container">
+            <div id="intro-content-container">
+                <div id="intro-line1" class="content">HERE YOU CAN FIND DELICIOUS FOODS</div>
+                <div id="intro-line2" class="content">MULTI-CUISINE RESTAURANT</div>
+                <div id="intro-line3" class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <button class="order-book-button"><a href="" class="text-in-button">ORDER RIGHT NOW</a></button>
+            </div>
+        </div>
+
+        <div id="call-info-container">
+            <div><img src="food.jpg"  class="food-image" alt="food-image" /></div>
+            <div id="call-info" class="content">
+                <div id="contact-line1">WE COOK DELICIOUS</div>
+                <div id="number-info">
+                    <div id="call-statement">YOU CAN CALL US ON:</div>
+                    <div id="number">+0000 000 0000</div>
+                </div>
+                <span id="or-div">OR</span>
+                <p><button id="order-now-button"><a href="" id="order-link">ORDER NOW</a></button></p>
+            </div>
+            <div><img src="https://www.sitchu.com.au/media/images/bistro-moncur-french-restaurant-sydne.width-650.optimize.jpg"  class="food-image" alt="food-image" /></div>
+        </div>
+
+        <div id="food-variety">
+            <div id="breakfast" class="food">
+                <a href=""><img class="circle-food-image" src="breakfast.jpg" alt="breakfast" /></a>
+                <a href="" class="food-text">Breakfast</a>
+            </div>
+            <div id="lunch" class="food">
+                <a href=""><img class="circle-food-image" src="lunch.png" alt="lunch" /></a>
+                <a href="" class="food-text">Lunch</a>
+            </div>
+            <div id="dinner" class="food">
+                <a href=""><img class="circle-food-image" src="dinner.jpg" alt="dinner" /></a>
+                <a href="" class="food-text">Dinner</a>
+            </div>
+            <div id="dessert" class="food">
+                <a href=""><img class="circle-food-image" src="dessert.jpg" alt="dessert" /></a>
+                <a href="" class="food-text">Desserts</a>
+            </div>
+        </div>
+
+        <div id="book-table-container">
+            <div id="book-table-form">
+                <div id="text-book">BOOK YOUR TABLE NOW</div>
+                <img src="table.jpg" alt="book table" id="book-image" />
+                <div id="reservation-form">
+                    <div id="res-text">Reservation</div>
+                    <select id="day-selection" class="elements">
+                        <option class="option-style">Select day</option>
+                        <option class="option-style">Monday</option>
+                        <option class="option-style">Tuesday</option>
+                        <option class="option-style">Wednesday</option>
+                        <option class="option-style">Thursday</option>
+                        <option class="option-style">Friday</option>
+                        <option class="option-style">Saturday</option>
+                        <option class="option-style">Sunday</option>
+                    </select>
+                    <select id="hour-selection" class="elements">
+                        <option class="option-style">Select hour</option>
+                        <option class="option-style">10:00</option>
+                        <option class="option-style">12:00</option>
+                        <option class="option-style">14:00</option>
+                        <option class="option-style">16:00</option>
+                        <option class="option-style">18:00</option>
+                        <option class="option-style">20:00</option>
+                        <option class="option-style">22:00</option>
+                    </select>
+                    <input class="elements" type="text" placeholder="Full name" />
+                    <input class="elements" type="tel" placeholder="Phone number" />
+                    <select id="table-selection" class="elements">
+                        <option class="option-style">How many people</option>
+                        <option class="option-style">1 person</option>
+                        <option class="option-style">2 people</option>
+                        <option class="option-style">3 people </option>
+                        <option class="option-style">4 people</option>
+                        <option class="option-style">5 people</option>
+                        <option class="option-style">6 people</option>
+                    </select>
+                    <button id="book-table-button"><a href="" id="book-table-link">BOOK NOW</a></button>
+                </div>
+            </div>
+            <div id="app-download-container">
+                <div id="app-download">
+                    <div id="download-text">GET APPLICATION FOR YOUR PHONE</div>
+                    <button id="download-button"><a href="" id="button-text">DOWNLOAD NOW</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="recommendation-container">
+            <div id="rec-text-head">WEEKLY FEATURED FOOD</div>
+            <div class="recommendations">
+                <div class="head-rec">Breakfast</div>
+                <hr />
+                <div id="image-breakfast">
+                    <div class="price-tag">$4.5</div>
+                </div>
+                <div class="menu-container">
+                    <div class="menu">Lorem ipsum</div>
+                    <div class="brief">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+            </div>
+            <div class="recommendations">
+                <div class="head-rec">Lunch</div>
+                <hr />
+                <div id="image-lunch">
+                    <div class="price-tag">$6.5</div>
+                </div>
+                <div class="menu-container">
+                    <div class="menu">Lorem ipsum</div>
+                    <div class="brief">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+            </div>
+            <div class="recommendations">
+                <div class="head-rec">Dinner</div>
+                <hr />
+                <div id="image-dinner">
+                    <div class="price-tag">$9.5</div>
+                </div>
+                <div class="menu-container">
+                    <div class="menu">Lorem ipsum</div>
+                    <div class="brief">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="div-for-blogs">
+            <div id="blog-container">
+                <div id="blog-head">OUR BLOG POSTS</div>
+                <div class="blog-holder">
+                    <div id="hold-blog-image1">
+                        <span class="hold-date">11 June 2020</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-header">Lorem ipsum</div>
+                        <div class="specifications">Dish/Chef</div>
+                        <div class="content-written">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        <a href="" class="link-to-read">CONTINUE READING...</a>
+                    </div>
+                </div>
+                <div class="blog-holder">
+                    <div id="hold-blog-image2">
+                        <span class="hold-date">11 June 2020</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-header">Lorem ipsum</div>
+                        <div class="specifications">Dish/Chef</div>
+                        <div class="content-written">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        <a href="" class="link-to-read">CONTINUE READING...</a>
+                    </div>
+                </div>
+                <div class="blog-holder">
+                    <div id="hold-blog-image3">
+                        <span class="hold-date">11 June 2020</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-header">Lorem ipsum</div>
+                        <div class="specifications">Dish/Chef</div>
+                        <div class="content-written">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        <a href="" class="link-to-read">CONTINUE READING...</a>
+                    </div>
+                </div>
+                <div class="blog-holder">
+                    <div id="hold-blog-image4">
+                        <span class="hold-date">11 June 2020</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-header">Lorem ipsum</div>
+                        <div class="specifications">Dish/Chef</div>
+                        <div class="content-written">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        <a href="" class="link-to-read">CONTINUE READING...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="new-letter">
+            <div id="news-letter-holder">
+                <div id="newsletter-head">SIGNUP FOR OUR NEWSLETTER</div>
+                <input id="email-container" type="text" placeholder="Enter your email here..." />
+                <input type="submit" id="send-button" value="SEND MESSAGE" />
+            </div>
+        </div>
+
+    </body>
+</html>
